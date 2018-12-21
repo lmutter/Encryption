@@ -1,6 +1,5 @@
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -8,10 +7,10 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.JTextArea;
 /**
- * Write a description of class UIPanel here.
+ * UI for Encryption business. Main Class.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @LM
+ * @12/20/18
  */
 public class UIPanel extends JFrame
 {
@@ -87,7 +86,6 @@ public class UIPanel extends JFrame
         {
             public void actionPerformed(ActionEvent e) {
             String length = lengthField.getText();
-            
             generatedKey.setText((new Keygen(Integer.parseInt(length))).toString());
         }
         });
@@ -98,5 +96,4 @@ public class UIPanel extends JFrame
        {
              UIPanel t = new UIPanel();
        }
-   
 }
